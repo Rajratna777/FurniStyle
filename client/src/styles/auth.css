@@ -1,0 +1,98 @@
+.auth-box {
+  width:380px;
+  margin:90px auto;
+  background:white;
+  padding:35px;
+  border-radius:22px;
+  box-shadow:0 20px 50px rgba(0,0,0,0.08);
+  text-align:center;
+}
+
+.auth-box input {
+  width:100%;
+  margin-bottom:12px;
+}
+.success-msg {
+  color: #2e7d32;
+  background: #e8f5e9;
+  padding: 10px;
+  border-radius: 6px;
+  margin-top: 10px;
+  font-weight: 600;
+  text-align: center;
+}
+
+.error-msg {
+  color: #c62828;
+  background: #fdecea;
+  padding: 10px;
+  border-radius: 6px;
+  margin-top: 10px;
+  font-weight: 600;
+  text-align: center;
+}
+/* SUCCESS ANIMATION */
+.otp-success {
+  margin-top: 15px;
+  text-align: center;
+  animation: fadeScale 0.6s ease-in-out;
+}
+
+.checkmark {
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  background: #2e7d32;
+  color: white;
+  font-size: 28px;
+  line-height: 50px;
+  margin: 0 auto 8px;
+  animation: pop 0.5s ease;
+}
+
+.otp-success p {
+  color: #2e7d32;
+  font-weight: 600;
+}
+
+/* ERROR */
+.otp-error {
+  margin-top: 10px;
+  color: #c62828;
+  font-weight: 600;
+  animation: shake 0.3s;
+}
+
+/* ANIMATIONS */
+@keyframes pop {
+  0% { transform: scale(0); }
+  70% { transform: scale(1.2); }
+  100% { transform: scale(1); }
+}
+
+@keyframes fadeScale {
+  from {
+    opacity: 0;
+    transform: scale(0.9);
+  }
+  to {
+    opacity: 1;
+    transform: scale(1);
+  }
+}
+
+@keyframes shake {
+  0% { transform: translateX(0); }
+  25% { transform: translateX(-5px); }
+  50% { transform: translateX(5px); }
+  75% { transform: translateX(-5px); }
+  100% { transform: translateX(0); }
+}
+.auth-box textarea {
+  width: 100%;
+  padding: 12px;
+  margin: 8px 0;
+  border-radius: 8px;
+  border: 1px solid #ccc;
+  resize: none;
+}

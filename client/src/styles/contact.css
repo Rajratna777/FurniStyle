@@ -1,0 +1,218 @@
+/* PAGE */
+.contact-page {
+  background: #fafafa;
+  font-family: "Segoe UI", sans-serif;
+}
+
+/* HERO */
+.contact-hero {
+  height: 300px;
+  background: linear-gradient(
+      rgba(0,0,0,0.45),
+      rgba(0,0,0,0.45)
+    ),
+    url("https://images.unsplash.com/photo-1505691938895-1758d7feb511");
+  background-size: cover;
+  background-position: center;
+  display: flex;
+  align-items: center;
+}
+
+.contact-hero-text {
+  color: #fff;
+  margin-left: 8%;
+}
+
+.contact-hero-text h1 {
+  font-size: 44px;
+  margin-bottom: 10px;
+}
+
+.contact-hero-text p {
+  font-size: 18px;
+  max-width: 420px;
+}
+
+/* WRAPPER */
+.contact-wrapper {
+  max-width: 1150px;
+  margin: -60px auto 60px;
+  display: flex;
+  gap: 30px;
+  padding: 0 20px;
+}
+
+/* CARDS */
+.contact-card {
+  background: #fff;
+  padding: 30px;
+  border-radius: 14px;
+  box-shadow: 0 12px 30px rgba(0,0,0,0.08);
+  transition: 0.3s;
+}
+
+.contact-card:hover {
+  transform: translateY(-5px);
+}
+
+/* INFO CARD */
+.contact-card.info {
+  flex: 1;
+}
+
+.contact-card.info h3 {
+  font-size: 26px;
+  margin-bottom: 8px;
+}
+
+/* ⭐ UNSPLASH IMAGE STYLE */
+.contact-img {
+  width: 100%;
+  height: 180px;
+  object-fit: cover;
+  border-radius: 12px;
+  margin: 15px 0 20px;
+  box-shadow: 0 6px 20px rgba(0,0,0,0.12);
+}
+
+/* TEXT */
+.tagline {
+  color: #666;
+  margin-bottom: 20px;
+}
+
+.info-row {
+  display: flex;
+  align-items: center;
+  margin-bottom: 14px;
+  font-size: 16px;
+}
+
+.info-row span {
+  font-size: 20px;
+  margin-right: 10px;
+}
+
+.note {
+  margin-top: 20px;
+  color: #555;
+}
+
+/* FORM CARD */
+.contact-card.form {
+  flex: 1.2;
+}
+
+.contact-card.form h3 {
+  font-size: 24px;
+  margin-bottom: 20px;
+}
+
+.form-group {
+  display: flex;
+  gap: 15px;
+}
+
+.contact-card.form input,
+.contact-card.form textarea {
+  width: 100%;
+  padding: 14px;
+  border-radius: 8px;
+  border: 1px solid #ccc;
+  font-size: 15px;
+  margin-bottom: 15px;
+  transition: 0.2s;
+}
+
+.contact-card.form input:focus,
+.contact-card.form textarea:focus {
+  border-color: #c8a165;
+  outline: none;
+}
+
+.contact-card.form textarea {
+  resize: none;
+}
+
+/* BUTTON */
+.contact-card.form button {
+  width: 100%;
+  padding: 14px;
+  background: #c8a165;
+  color: #fff;
+  border: none;
+  border-radius: 30px;
+  font-size: 16px;
+  font-weight: 600;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+.contact-card.form button:hover {
+  background: #b08b4a;
+}
+
+.contact-card.form button:active {
+  transform: scale(0.97);
+}
+
+/* FOOTER TRUST */
+.contact-footer {
+  background: #1f1f1f;
+  color: #fff;
+  text-align: center;
+  padding: 40px 20px;
+}
+
+.contact-footer h4 {
+  font-size: 22px;
+  margin-bottom: 10px;
+}
+
+.contact-footer p {
+  color: #ccc;
+  max-width: 600px;
+  margin: auto;
+}
+
+/* RESPONSIVE */
+@media (max-width: 900px) {
+  .contact-wrapper {
+    flex-direction: column;
+    margin-top: -40px;
+  }
+
+  .form-group {
+    flex-direction: column;
+  }
+
+  .contact-hero-text {
+    margin-left: 20px;
+  }
+}
+/* POPUP */
+.popup {
+  position: fixed;
+  top: 30px;
+  right: 30px;
+  background: #c8a165;
+  color: white;
+  padding: 14px 22px;
+  border-radius: 12px;
+  font-size: 16px;
+  box-shadow: 0 10px 25px rgba(0,0,0,0.2);
+  animation: slideFade 0.5s ease;
+  z-index: 999;
+}
+
+/* ANIMATION */
+@keyframes slideFade {
+  from {
+    opacity: 0;
+    transform: translateX(60px);
+  }
+  to {
+    opacity: 1;
+    transform: translateX(0);
+  }
+}
